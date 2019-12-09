@@ -8,12 +8,17 @@
 
 import UIKit
 
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.orange
         
+        let label: UILabel = UILabel.init(text: "sss", color: UIColor(hexStr: "5943FC") , fontSize: nil)
+                
+        label.frame = CGRect(x: 100, y: 100, width: 100, height: 30)
+        self.view.addSubview(label)
     }
 
 

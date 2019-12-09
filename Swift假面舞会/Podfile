@@ -8,7 +8,7 @@ target 'Swift假面舞会' do
   # Pods for Swift假面舞会
 
   pod 'Moya/RxSwift', '~> 13.0'
-
+  pod 'SnapKit', '~> 5.0.0'
 
 
 
