@@ -34,7 +34,8 @@ extension UILabel {
                             fontSize: CGFloat?) {
         self.init(text: text)
         textColor = color ?? UIColor.black
-        font = UIFont.systemFont(ofSize: fontSize ?? 22)
+        let fontNumber = fontSize ?? 16
+        font = Font(fontNumber)
     }
     
     

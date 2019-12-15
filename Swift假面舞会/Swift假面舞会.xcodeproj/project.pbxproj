@@ -14,10 +14,9 @@
 		3D1F265C239EBCEE00B74137 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F265B239EBCEE00B74137 /* UIColorExtension.swift */; };
 		3D1F265F239EBF2600B74137 /* CommonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F265E239EBF2600B74137 /* CommonInfo.swift */; };
 		3D1F2661239EC3E400B74137 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F2660239EC3E400B74137 /* UIButtonExtension.swift */; };
+		3D56C59423A63A4200314038 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C59323A63A4200314038 /* SceneDelegate.swift */; };
+		3D56C59623A640AC00314038 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C59523A640AC00314038 /* UIViewExtension.swift */; };
 		3DC28FA0238C492E0019902E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC28F9F238C492E0019902E /* AppDelegate.swift */; };
-		3DC28FA2238C492E0019902E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC28FA1238C492E0019902E /* SceneDelegate.swift */; };
-		3DC28FA4238C492E0019902E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC28FA3238C492E0019902E /* ViewController.swift */; };
-		3DC28FA7238C492E0019902E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC28FA5238C492E0019902E /* Main.storyboard */; };
 		3DC28FA9238C492F0019902E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC28FA8238C492F0019902E /* Assets.xcassets */; };
 		3DC28FAC238C492F0019902E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC28FAA238C492F0019902E /* LaunchScreen.storyboard */; };
 		3DC28FB7238C492F0019902E /* Swift____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC28FB6238C492F0019902E /* Swift____Tests.swift */; };
@@ -50,11 +49,10 @@
 		3D1F265B239EBCEE00B74137 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
 		3D1F265E239EBF2600B74137 /* CommonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonInfo.swift; sourceTree = "<group>"; };
 		3D1F2660239EC3E400B74137 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
+		3D56C59323A63A4200314038 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3D56C59523A640AC00314038 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		3DC28F9C238C492E0019902E /* Swift假面舞会.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift假面舞会.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC28F9F238C492E0019902E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3DC28FA1238C492E0019902E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3DC28FA3238C492E0019902E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3DC28FA6238C492E0019902E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3DC28FA8238C492F0019902E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3DC28FAB238C492F0019902E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC28FAD238C492F0019902E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -129,6 +127,7 @@
 				3D1F2659239EB43400B74137 /* LabelExtension.swift */,
 				3D1F265B239EBCEE00B74137 /* UIColorExtension.swift */,
 				3D1F2660239EC3E400B74137 /* UIButtonExtension.swift */,
+				3D56C59523A640AC00314038 /* UIViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -171,7 +170,6 @@
 				3D1F26532399616A00B74137 /* Login */,
 				3DC28FD0238C49550019902E /* Main */,
 				3DC28FCF238C49370019902E /* Resources */,
-				3DC28FA3238C492E0019902E /* ViewController.swift */,
 			);
 			path = "Swift假面舞会";
 			sourceTree = "<group>";
@@ -197,7 +195,6 @@
 		3DC28FCF238C49370019902E /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3DC28FA5238C492E0019902E /* Main.storyboard */,
 				3DC28FA8238C492F0019902E /* Assets.xcassets */,
 				3DC28FAA238C492F0019902E /* LaunchScreen.storyboard */,
 				3DC28FAD238C492F0019902E /* Info.plist */,
@@ -208,8 +205,8 @@
 		3DC28FD0238C49550019902E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				3D56C59323A63A4200314038 /* SceneDelegate.swift */,
 				3DC28F9F238C492E0019902E /* AppDelegate.swift */,
-				3DC28FA1238C492E0019902E /* SceneDelegate.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -334,7 +331,6 @@
 			files = (
 				3DC28FAC238C492F0019902E /* LaunchScreen.storyboard in Resources */,
 				3DC28FA9238C492F0019902E /* Assets.xcassets in Resources */,
-				3DC28FA7238C492E0019902E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,11 +442,11 @@
 				3D1F265A239EB43500B74137 /* LabelExtension.swift in Sources */,
 				3D1F265C239EBCEE00B74137 /* UIColorExtension.swift in Sources */,
 				3D1F2655239961B200B74137 /* LoginAPI.swift in Sources */,
-				3DC28FA4238C492E0019902E /* ViewController.swift in Sources */,
 				3D1F2661239EC3E400B74137 /* UIButtonExtension.swift in Sources */,
 				3D1F2657239974FC00B74137 /* LoginBeginController.swift in Sources */,
+				3D56C59623A640AC00314038 /* UIViewExtension.swift in Sources */,
 				3DC28FA0238C492E0019902E /* AppDelegate.swift in Sources */,
-				3DC28FA2238C492E0019902E /* SceneDelegate.swift in Sources */,
+				3D56C59423A63A4200314038 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,14 +482,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		3DC28FA5238C492E0019902E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3DC28FA6238C492E0019902E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		3DC28FAA238C492F0019902E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -627,6 +615,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D924N92LK;
 				INFOPLIST_FILE = "Swift假面舞会/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -646,6 +635,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3D924N92LK;
 				INFOPLIST_FILE = "Swift假面舞会/Resources/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

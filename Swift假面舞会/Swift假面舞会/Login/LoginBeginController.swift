@@ -22,7 +22,8 @@ class LoginBeginController: UIViewController {
     
     
     fileprivate lazy var titleLabel: UILabel = {
-        var label = UILabel(text: "假面舞会", color: ColorText_8, fontSize: 20)
+        var label = UILabel(text: "假面舞会", color: ColorText_3, fontSize: 20)
+        label.textAlignment = .center
         return label
     }()
     
@@ -31,25 +32,18 @@ class LoginBeginController: UIViewController {
         return btn
     }()
     
-    
+    fileprivate lazy var registerBtn: UIButton = {
+        var btn  = UIButton(title: "手机号码注册", textColor: UIColor.white, backColor: BaseBlueColor, fontSize: 16, corner: 22)
+        return btn
+    }()
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configSubviews()
-        
+
         
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
 
@@ -59,12 +53,42 @@ class LoginBeginController: UIViewController {
 extension LoginBeginController {
     
     func configSubviews() {
-        self.view .addSubview(iconImage)
+        view.backgroundColor = UIColor.white
         
-        
+        self.view.addSubview(iconImage)
+        self.view.addSubview(titleLabel)
+        self.view.addSubview(loginBtn)
+        self.view.addSubview(registerBtn)
+
+    
         iconImage.snp.makeConstraints { (make) in
+            make.centerX.equalTo(view.snp.centerX)
+            make.width.height.equalTo(Width(100))
+            make.top.equalTo(view.snp.top).offset(Height(100))
         }
 
+        titleLabel.snp.makeConstraints { (make) in
+            make.centerX.equalTo(view.snp.centerX)
+            make.width.equalTo(Width(100))
+            make.height.equalTo(Height(28))
+            make.top.equalTo(iconImage.snp.bottom).offset(Height(35))
+        }
+
+        loginBtn.snp.makeConstraints { (make) in
+            make.centerX.equalTo(view.snp.centerX)
+            make.width.equalTo(Width(293))
+            make.height.equalTo(Height(44))
+            make.top.equalTo(titleLabel.snp.bottom).offset(Height(44))
+        }
+
+        registerBtn.snp.makeConstraints { (make) in
+            make.centerX.equalTo(self.view.snp_centerXWithinMargins)
+            make.width.equalTo(Width(293))
+            make.height.equalTo(Height(44))
+            make.top.equalTo(loginBtn.snp.bottom).offset(Height(13))
+        }
+        
+        
     }
     
     
