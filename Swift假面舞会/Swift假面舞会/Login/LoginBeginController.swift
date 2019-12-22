@@ -20,7 +20,6 @@ class LoginBeginController: UIViewController {
         return iconImage
     }()
     
-    
     fileprivate lazy var titleLabel: UILabel = {
         var label = UILabel(text: "假面舞会", color: ColorText_3, fontSize: 20)
         label.textAlignment = .center
@@ -29,11 +28,13 @@ class LoginBeginController: UIViewController {
     
     fileprivate lazy var loginBtn: UIButton = {
         var btn = UIButton(title: "登录", textColor: UIColor.white, backColor: BaseBlueColor, fontSize: 16, corner: 22)
+        btn.addTarget(self, action: #selector(loginBtnClick), for: .touchUpInside)
         return btn
     }()
     
     fileprivate lazy var registerBtn: UIButton = {
         var btn  = UIButton(title: "手机号码注册", textColor: UIColor.white, backColor: BaseBlueColor, fontSize: 16, corner: 22)
+        btn.addTarget(self, action: #selector(registerBtnClick), for: .touchUpInside)
         return btn
     }()
 
@@ -46,10 +47,28 @@ class LoginBeginController: UIViewController {
     }
 
 }
+// MARK: - Action
+extension LoginBeginController {
+    
+    @objc func registerBtnClick() {
+        let registerVC = RegisterBeginController()
+        let nav = UINavigationController(rootViewController: registerVC)
+        self.show(nav, sender: nil)
+    }
+    
+    
+    @objc func loginBtnClick() {
+        
+    }
+    
+}
+
+
+
+
 
 
 // MARK: - Config UI
-
 extension LoginBeginController {
     
     func configSubviews() {

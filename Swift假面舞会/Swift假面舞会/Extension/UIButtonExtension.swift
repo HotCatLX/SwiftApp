@@ -28,12 +28,11 @@ extension UIButton {
                      fontSize: CGFloat,
                      corner: CGFloat
     )  {
-        
         self.init()
         setTitle(title, for: .normal)
         setTitleColor(textColor ?? UIColor.black, for: .normal)
         backgroundColor = backColor
-        titleLabel?.font = UIFont.systemFont(ofSize: fontSize)
+        titleLabel?.font = Font(fontSize)
         if corner > 0 {
             layer.cornerRadius = corner
         }

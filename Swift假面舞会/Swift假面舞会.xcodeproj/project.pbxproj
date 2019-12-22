@@ -16,6 +16,12 @@
 		3D1F2661239EC3E400B74137 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D1F2660239EC3E400B74137 /* UIButtonExtension.swift */; };
 		3D56C59423A63A4200314038 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C59323A63A4200314038 /* SceneDelegate.swift */; };
 		3D56C59623A640AC00314038 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C59523A640AC00314038 /* UIViewExtension.swift */; };
+		3D56C59823A7E8BB00314038 /* RegisterBeginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C59723A7E8BB00314038 /* RegisterBeginController.swift */; };
+		3D56C59C23A7EBB300314038 /* RegisterInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C59B23A7EBB300314038 /* RegisterInputView.swift */; };
+		3D56C59E23A7ED0E00314038 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C59D23A7ED0E00314038 /* UITextFieldExtension.swift */; };
+		3D56C5A223AF271100314038 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C5A123AF271100314038 /* BaseNavigationController.swift */; };
+		3D56C5A423AFDD3C00314038 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C5A323AFDD3C00314038 /* StringExtension.swift */; };
+		3D56C5A723AFE1D000314038 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D56C5A623AFE1D000314038 /* ToastView.swift */; };
 		3DC28FA0238C492E0019902E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC28F9F238C492E0019902E /* AppDelegate.swift */; };
 		3DC28FA9238C492F0019902E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DC28FA8238C492F0019902E /* Assets.xcassets */; };
 		3DC28FAC238C492F0019902E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC28FAA238C492F0019902E /* LaunchScreen.storyboard */; };
@@ -51,6 +57,12 @@
 		3D1F2660239EC3E400B74137 /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		3D56C59323A63A4200314038 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		3D56C59523A640AC00314038 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		3D56C59723A7E8BB00314038 /* RegisterBeginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterBeginController.swift; sourceTree = "<group>"; };
+		3D56C59B23A7EBB300314038 /* RegisterInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInputView.swift; sourceTree = "<group>"; };
+		3D56C59D23A7ED0E00314038 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		3D56C5A123AF271100314038 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		3D56C5A323AFDD3C00314038 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		3D56C5A623AFE1D000314038 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		3DC28F9C238C492E0019902E /* Swift假面舞会.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift假面舞会.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DC28F9F238C492E0019902E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3DC28FA8238C492F0019902E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,6 +127,7 @@
 		3D1F26532399616A00B74137 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				3D56C59923A7EB7D00314038 /* Register */,
 				3D1F2654239961B200B74137 /* LoginAPI.swift */,
 				3D1F2656239974FC00B74137 /* LoginBeginController.swift */,
 			);
@@ -128,6 +141,8 @@
 				3D1F265B239EBCEE00B74137 /* UIColorExtension.swift */,
 				3D1F2660239EC3E400B74137 /* UIButtonExtension.swift */,
 				3D56C59523A640AC00314038 /* UIViewExtension.swift */,
+				3D56C59D23A7ED0E00314038 /* UITextFieldExtension.swift */,
+				3D56C5A323AFDD3C00314038 /* StringExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -138,6 +153,49 @@
 				3D1F265E239EBF2600B74137 /* CommonInfo.swift */,
 			);
 			path = BaseInfo;
+			sourceTree = "<group>";
+		};
+		3D56C59923A7EB7D00314038 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				3D56C59A23A7EB8D00314038 /* View */,
+				3D56C59723A7E8BB00314038 /* RegisterBeginController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		3D56C59A23A7EB8D00314038 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3D56C59B23A7EBB300314038 /* RegisterInputView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3D56C59F23AF26BD00314038 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				3D56C5A523AFE05000314038 /* BaseView */,
+				3D56C5A023AF26D600314038 /* BaseController */,
+				3D1F265D239EBF0900B74137 /* BaseInfo */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		3D56C5A023AF26D600314038 /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				3D56C5A123AF271100314038 /* BaseNavigationController.swift */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		3D56C5A523AFE05000314038 /* BaseView */ = {
+			isa = PBXGroup;
+			children = (
+				3D56C5A623AFE1D000314038 /* ToastView.swift */,
+			);
+			path = BaseView;
 			sourceTree = "<group>";
 		};
 		3DC28F93238C492E0019902E = {
@@ -165,7 +223,7 @@
 		3DC28F9E238C492E0019902E /* Swift假面舞会 */ = {
 			isa = PBXGroup;
 			children = (
-				3D1F265D239EBF0900B74137 /* BaseInfo */,
+				3D56C59F23AF26BD00314038 /* Base */,
 				3D1F2658239EB3BC00B74137 /* Extension */,
 				3D1F26532399616A00B74137 /* Login */,
 				3DC28FD0238C49550019902E /* Main */,
@@ -438,14 +496,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D56C5A223AF271100314038 /* BaseNavigationController.swift in Sources */,
 				3D1F265F239EBF2600B74137 /* CommonInfo.swift in Sources */,
+				3D56C59E23A7ED0E00314038 /* UITextFieldExtension.swift in Sources */,
 				3D1F265A239EB43500B74137 /* LabelExtension.swift in Sources */,
+				3D56C5A723AFE1D000314038 /* ToastView.swift in Sources */,
 				3D1F265C239EBCEE00B74137 /* UIColorExtension.swift in Sources */,
 				3D1F2655239961B200B74137 /* LoginAPI.swift in Sources */,
 				3D1F2661239EC3E400B74137 /* UIButtonExtension.swift in Sources */,
 				3D1F2657239974FC00B74137 /* LoginBeginController.swift in Sources */,
+				3D56C5A423AFDD3C00314038 /* StringExtension.swift in Sources */,
+				3D56C59823A7E8BB00314038 /* RegisterBeginController.swift in Sources */,
 				3D56C59623A640AC00314038 /* UIViewExtension.swift in Sources */,
 				3DC28FA0238C492E0019902E /* AppDelegate.swift in Sources */,
+				3D56C59C23A7EBB300314038 /* RegisterInputView.swift in Sources */,
 				3D56C59423A63A4200314038 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
