@@ -21,15 +21,17 @@ class RegisterBeginController: UIViewController {
     fileprivate lazy var mobileInfo: RegisterInputView = {
         var mobile = RegisterInputView()
         mobile.configViewInfo(leftStr: "+86" ,middlePlaceStr: "请输入手机号" ,rightStr: nil)
+        mobile.inputType = .number
         return mobile
     }()
     
     fileprivate lazy var codeInfo: RegisterInputView = {
         var code = RegisterInputView()
         code.configViewInfo(leftStr: "验证码" ,middlePlaceStr: "请输入收到的验证码" ,rightStr: "发送验证码")
+        code.inputType = .number
         code.rightBtnClickHandler = {
-            print("right btn click")
-            
+            weak var weakSelf = self
+            weakSelf?.sendSecurityCode()
         }
         return code
     }()
@@ -37,6 +39,7 @@ class RegisterBeginController: UIViewController {
     fileprivate lazy var passwordInfo: RegisterInputView = {
         var password = RegisterInputView()
         password.configViewInfo(leftStr: "设置密码" ,middlePlaceStr: "设置登陆密码" ,rightStr: nil)
+        password.inputType = .normal
         return password
     }()
     
@@ -44,7 +47,6 @@ class RegisterBeginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.configSubviews()
-
     }
     
 
@@ -58,16 +60,17 @@ extension RegisterBeginController {
     //发送验证码
     
     func sendSecurityCode() {
+        
         guard let mobile = mobileInfo.inputStr else {
-            
+            ToastView.shared().show(str: "请输入手机号码")
             return
         }
         
-        
-        if mobile.isEmpty() {
-        
-            
+        if mobile.isEmpty() || !mobile.isPhone() {
+            ToastView.shared().show(str: "请输入正确的手机号码")
+            return
         }
+        
         
         
         

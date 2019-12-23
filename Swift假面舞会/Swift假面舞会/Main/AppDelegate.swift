@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import IQKeyboardManagerSwift
 
 @UIApplicationMain
 
@@ -22,6 +23,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = loginVC
         window?.makeKeyAndVisible()
+        
+        //注册IQKeyboard
+        IQKeyboardManager.shared.enable = true
+        
+        
         return true
     }
     

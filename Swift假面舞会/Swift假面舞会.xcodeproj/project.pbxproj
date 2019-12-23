@@ -27,6 +27,7 @@
 		3DC28FAC238C492F0019902E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DC28FAA238C492F0019902E /* LaunchScreen.storyboard */; };
 		3DC28FB7238C492F0019902E /* Swift____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC28FB6238C492F0019902E /* Swift____Tests.swift */; };
 		3DC28FC2238C492F0019902E /* Swift____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC28FC1238C492F0019902E /* Swift____UITests.swift */; };
+		8E449F8C8ECFD76D5BA7EFFB /* Pods_Swift____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F00A272DD36D4773EFC93CF /* Pods_Swift____.framework */; };
 		E97DD3E786ED0FCF8D77C225 /* Pods_Swift____Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EB1EB3AF148C08FC3B15C22 /* Pods_Swift____Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -69,19 +70,19 @@
 		3DC28FAB238C492F0019902E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3DC28FAD238C492F0019902E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC28FB2238C492F0019902E /* Swift假面舞会Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift假面舞会Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DC28FB6238C492F0019902E /* Swift____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift____Tests.swift"; sourceTree = "<group>"; };
+		3DC28FB6238C492F0019902E /* Swift____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift____Tests.swift; sourceTree = "<group>"; };
 		3DC28FB8238C492F0019902E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3DC28FBD238C492F0019902E /* Swift假面舞会UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Swift假面舞会UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DC28FC1238C492F0019902E /* Swift____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Swift____UITests.swift"; sourceTree = "<group>"; };
+		3DC28FC1238C492F0019902E /* Swift____UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Swift____UITests.swift; sourceTree = "<group>"; };
 		3DC28FC3238C492F0019902E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3F00A272DD36D4773EFC93CF /* Pods_Swift____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Swift____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		4EB1EB3AF148C08FC3B15C22 /* Pods_Swift____Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Swift____Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F00A272DD36D4773EFC93CF /* Pods_Swift____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift____.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4EB1EB3AF148C08FC3B15C22 /* Pods_Swift____Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift____Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F00AD48B4A1CAF73D04430E /* Pods-Swift假面舞会UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift假面舞会UITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift假面舞会UITests/Pods-Swift假面舞会UITests.release.xcconfig"; sourceTree = "<group>"; };
 		64CA35E44D31E3AF41D3C741 /* Pods-Swift假面舞会Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift假面舞会Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift假面舞会Tests/Pods-Swift假面舞会Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		70D2F193D3745A6A65B080E7 /* Pods-Swift假面舞会.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift假面舞会.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swift假面舞会/Pods-Swift假面舞会.release.xcconfig"; sourceTree = "<group>"; };
 		C3E41A2D3D35AFA703D98FC7 /* Pods-Swift假面舞会.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift假面舞会.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift假面舞会/Pods-Swift假面舞会.debug.xcconfig"; sourceTree = "<group>"; };
 		ED2D6AE651688CDAB47B7182 /* Pods-Swift假面舞会UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swift假面舞会UITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swift假面舞会UITests/Pods-Swift假面舞会UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		FDD32828F74B2F40E77C87EE /* Pods_Swift____UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_Swift____UITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD32828F74B2F40E77C87EE /* Pods_Swift____UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swift____UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E449F8C8ECFD76D5BA7EFFB /* Pods_Swift____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +473,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Swift假面舞会/Pods-Swift假面舞会-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
@@ -479,6 +482,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",

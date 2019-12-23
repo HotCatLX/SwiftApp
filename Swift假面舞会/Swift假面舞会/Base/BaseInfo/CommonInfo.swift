@@ -8,7 +8,7 @@
 
 import UIKit
 
-
+// MARK: - Color
 /*
  * 字体颜色
  */
@@ -22,6 +22,17 @@ let BaseBlueColor: UIColor = UIColor(hexStr: "#5943FC")
 
 
 
+// MARK: - Screen
+let ScreenWidth: CGFloat = UIScreen.main.bounds.size.width
+let ScreenHeight: CGFloat = UIScreen.main.bounds.size.height
+
+
+
+
+
+
+
+// MARK: - 适配
 
 /*
  * 宽度和高度适配

@@ -10,6 +10,11 @@ import UIKit
 
 class RegisterInputView: UIView {
     
+    enum InputKeybordType {
+        case normal
+        case number
+    }
+    
     //点击事件闭包
     public var rightBtnClickHandler: (()->())?
     
@@ -20,7 +25,25 @@ class RegisterInputView: UIView {
         }
     }
     
-    
+    public var inputType: InputKeybordType {
+        get {
+            return InputKeybordType.normal
+        }
+        
+        set {
+            switch newValue {
+            case .normal:
+                inputTextfield.keyboardType = .namePhonePad
+
+            case .number:
+                inputTextfield.keyboardType = .numberPad
+                
+            }
+        }
+        
+     
+    }
+
     
     fileprivate lazy var topLine: UIView = {
         var line = UIView()
@@ -114,11 +137,6 @@ extension RegisterInputView {
         if let onClickBack = rightBtnClickHandler {    
             onClickBack()
         }
-        
     }
-    
-    
-    
-    
 }
 

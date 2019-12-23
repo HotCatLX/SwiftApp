@@ -9,7 +9,7 @@ target 'Swift假面舞会' do
 
   pod 'Moya/RxSwift', '~> 13.0'
   pod 'SnapKit', '~> 5.0.0'
-
+  pod 'IQKeyboardManagerSwift', '~> 6.3.0'
 
 
 
